@@ -1,0 +1,18 @@
+.tamaño {
+    color: #61DAFB;
+    font-size: 90px;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subrayado::after {
+    content: '';
+    width: 100px;
+    height: 6px;
+    background-color: #66a2fe;
+    display: block;
+}
