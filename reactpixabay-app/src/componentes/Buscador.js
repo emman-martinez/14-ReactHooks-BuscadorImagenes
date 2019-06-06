@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Error from './Error';
 
 function Buscador() {
 
@@ -38,6 +39,8 @@ function Buscador() {
                     />
                 </div>
             </div>
+            {/* ***** Componente: Error ***** */}
+            { (error) ? <Error mensaje="Agrega un término de búsqueda"></Error> : null }
         </form>
     )
 }
