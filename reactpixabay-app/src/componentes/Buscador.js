@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Error from './Error';
 
-function Buscador() {
+function Buscador(props) {
 
     /* ***** Uso de Hooks ***** */
     const [terminoBusqueda, guardarTerminoBusqueda] = useState('');
@@ -18,6 +18,7 @@ function Buscador() {
         }
         // Enviar el término hacia el componente principal
         guardarError(false);
+        props.guardarBusqueda(terminoBusqueda);
     }
 
     return(
